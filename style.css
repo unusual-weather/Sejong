@@ -1,0 +1,34 @@
+.title{
+  border-bottom: black 1px solid;
+  padding: 20px;
+  text-align:center;
+}
+.title h1{
+  font-size:45px;
+  display:inline;
+}
+
+#grid{
+  display:grid;
+  grid-template-columns: 160px 1fr;
+}
+
+#grid a{
+  text-decoration:underline;
+  color : darkblue;
+}
+#grid #ol_left{
+  border-right: black 1px solid;
+  width : 120px;
+  margin:0;
+  padding-left:30px;
+  padding-top :10px;
+  font-weight : bolder;
+}
+#grid li{
+  padding-bottom: 20px;
+}
+.img_media{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}

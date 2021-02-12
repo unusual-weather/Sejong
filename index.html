@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+  <!--javascript를 불러오는 -->
   <script src="Night_day & Links.js"></script>
   <title>세종대 정보보호학과 소개</title>
   <meta charset="utf-8">
@@ -13,52 +14,68 @@
 
   gtag('config', 'G-V13BR26G4M');
 </script>
+<!--여기는 style.css를 불러오는 -->
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1><a href="index.html">세종대</h1></a>
-  <input type="button" value="night" onclick="
-    NightDayHandler(this);
-  ">
-  <ol>
+
+
+<body style="margin:0;">
+  <div class="title">
+    <h1>세종대</h1>
+    <input type="button" value="night" onclick="
+      NightDayHandler(this);
+    ">
+  </div>
+<div id="grid">
+  <ol id="ol_left">
+    <li><a href="index.html">세종대란?</li></a>
     <li><a href="정보보호학과란.html">정보보호학과</li></a>
     <li><a href="상.html">수상실적</li></a>
   </ol>
-  <h2><a href="http://www.sejong.ac.kr/" target="_blank" title="세종대학교홈페이지">세종대</a>란 어떤학교인가?</h2>
-  <p>서울특별시 광진구 소재 사립 종합대학교. 1940년 주영하가 서울특별시 성동구 광희동[2]에 설립한 경성인문중등학원이 시초이다. 학교법인 대양학원이 운영하고 있으며, 현재 총장은 제13대 배덕효이다. 학부는 단과대학 10개, 독립학부 1개, 교양대학 1개로 구성되어 있고 대학원은 일반대학원 1개, 전문대학원 1개, 특수대학원 5개로 구성되어 있다. 캠퍼스의 정문은 서울 지하철 7호선의 어린이대공원역 6번 출구와 맞닿아 있으며, 인근에 서울어린이대공원이 있다.</p>
-  <img  width="500" height="500" src="세종대 로고.jpg" alt="세종대 로고"><br>
-  <img  width="" height="300" src="세종대 풍경.jpg" alt="세종대 풍경">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/nsQKgQHuygU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://sejong.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
+  <div>
+    <h2 style="font-size:30px;"><!--<a href="http://www.sejong.ac.kr/" target="_blank" title="세종대학교홈페이지">-->세종대란 어떤학교인가?</h2>
+    <p>서울특별시 광진구 소재 사립 종합대학교. 1940년 주영하가 서울특별시 성동구 광희동[2]에 설립한 경성인문중등학원이 시초이다.
+     학교법인 대양학원이 운영하고 있으며, 현재 총장은 제13대 배덕효이다. 학부는 단과대학 10개, 독립학부 1개, 교양대학 1개로 구성되어 있고
+     대학원은 일반대학원 1개, 전문대학원 1개, 특수대학원 5개로 구성되어 있다. 캠퍼스의 정문은 서울 지하철 7호선의 어린이대공원역 6번 출구와 맞닿아
+     있으며, 인근에 서울어린이대공원이 있다.
+   </p>
+
+    <img  width="500" height="500" src="세종대 로고.jpg" alt="세종대 로고">
+    <iframe style="width:1000px; height:500px;" src="https://www.youtube.com/embed/nsQKgQHuygU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+    <div id="disqus_thread"></div>
+  <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sejong.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/601add4ec31c9117cb75835d/1etkf0v90';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
     })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/601add4ec31c9117cb75835d/1etkf0v90';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
